@@ -13,6 +13,7 @@ Commit/tag/release: [Release v0.9.3](https://github.com/unclecode/crawl4ai/relea
 |Carlos Eduardo Laurentino dos Santos|202100045582| Lorem ipsum
 |Daniel Rodrigo Ferreira dos Santos|202200059704| Lorem ipsum
 |Letícia Rezende dos Santos|202200060053| Lorem ipsum
+|Lucas Conceição Celestino|202200060071| Lorem ipsum
 |Maria Rita Melo de Souza|202200059956| Lorem ipsum
 |Rivaldo José Nascimento dos Santos|202200059974| Lorem ipsum
 
