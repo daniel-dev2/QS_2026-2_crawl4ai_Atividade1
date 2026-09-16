@@ -9,13 +9,13 @@ Commit/tag/release: [Release v0.9.3](https://github.com/unclecode/crawl4ai/relea
 
 | Membro | Matrícula | Atividade Desempenhada
 |--|--|--|
-| Brício Thyers de Gois Macedo | 202200059651 | Lorem ipsum
-|Carlos Eduardo Laurentino dos Santos|202100045582| Lorem ipsum
-|Daniel Rodrigo Ferreira dos Santos|202200059704| Lorem ipsum
-|Letícia Rezende dos Santos|202200060053| Lorem ipsum
-|Lucas Conceição Celestino|202200060071| Lorem ipsum
-|Maria Rita Melo de Souza|202200059956| Lorem ipsum
-|Rivaldo José Nascimento dos Santos|202200059974| Lorem ipsum
+| Brício Thyers de Gois Macedo | 202200059651 |Requisitos de qualidade
+|Carlos Eduardo Laurentino dos Santos|202100045582| Casos de teste documentados
+|Daniel Rodrigo Ferreira dos Santos|202200059704| Caracteristicas ISO/IES
+|Letícia Rezende dos Santos|202200060053| Casos de teste documentados
+|Lucas Conceição Celestino|202200060071| Caracteristicas ISO/IES
+|Maria Rita Melo de Souza|202200059956| Requisitos de qualidade
+|Rivaldo José Nascimento dos Santos|202200059974| Casos de teste documentados
 
 ## Entregas
 URL para vídeo no YouTube:
