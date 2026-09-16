@@ -1,0 +1,69 @@
+COMANDOS UTILIZADOS - CASOS DE TESTE CT-05 a CT-08
+Qualidade de Software - UFS - 2026.2 - Equipe 02 - Projeto Crawl4AI
+====================================================================
+
+OBSERVAÇÃO GERAL SOBRE O USO DE MODELO (LLM)
+--------------------------------------------
+Os casos CT-05 a CT-08 avaliam o comportamento nativo do Crawl4AI
+(tratamento de erro, renderização de JavaScript, exposição de dados
+sensíveis e filtragem de conteúdo principal) - ou seja, testam a
+camada de coleta/parsing da ferramenta, não a camada de extração
+estruturada via LLM.
+
+Por isso, nenhum destes 4 casos utiliza um modelo de linguagem: os
+comandos foram executados diretamente via CLI do Crawl4AI (`crwl`),
+sem passar a saída por nenhum LLM. Isso é diferente dos casos CT-01
+a CT-04 (que testam RQ-01, RQ-02, RQ-11 a RQ-14 - todos relacionados
+a extração estruturada, resposta a perguntas e resistência a prompt
+injection), onde o uso do modelo Qwen/Qwen3-4B é necessário porque o
+próprio requisito testado depende do comportamento do LLM.
+
+
+CT-05 - Indisponibilidade (RQ-03)
+----------------------------------
+Comando:
+    crwl https://site-que-nao-existe-123456789.com -o markdown
+
+Por que sem modelo:
+    O objetivo é verificar se o Crawl4AI reporta a falha de acesso
+    de forma explícita. Isso é uma característica do crawler em si
+    (camada de rede/parsing) - não há conteúdo extraído para um LLM
+    processar, já que a página não existe.
+
+
+CT-06 - Conteúdo dinâmico via JavaScript (RQ-04)
+--------------------------------------------------
+Comando:
+    crwl https://quotes.toscrape.com/js/ -o markdown
+
+Por que sem modelo:
+    O objetivo é verificar se o Crawl4AI renderiza corretamente
+    conteúdo carregado via JavaScript (citações, autores, tags e
+    paginação). Isso depende do motor de renderização do crawler
+    (Playwright), não de interpretação por LLM.
+
+
+CT-07 - Dados sensíveis (RQ-05)
+----------------------------------
+Comando:
+    crwl http://localhost:8000/pagina-teste.html -o markdown
+
+Por que sem modelo:
+    O objetivo é verificar se o Crawl4AI mascara ou expõe dados
+    sensíveis (e-mail, token e senha fictícios) presentes na página
+    coletada. Esse comportamento é definido pela camada de
+    coleta/saída do crawler, não pela camada de extração via LLM -
+    um modelo não teria papel na decisão de mascarar ou não o dado.
+
+
+CT-08 - Conteúdo principal / ruído de navegação (RQ-06)
+-----------------------------------------------------------
+Comando:
+    crwl https://docs.crawl4ai.com/ -o markdown
+
+Por que sem modelo:
+    O objetivo é verificar se o filtro de conteúdo do Crawl4AI
+    (fit_markdown) consegue isolar o conteúdo principal da página,
+    descartando menus e elementos de navegação. Essa filtragem é
+    feita pelo próprio mecanismo de extração do crawler, sem
+    envolvimento de um LLM.
