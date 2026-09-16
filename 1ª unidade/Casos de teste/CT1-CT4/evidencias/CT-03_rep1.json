@@ -1,0 +1,24 @@
+{
+  "caso": "CT-03",
+  "repeticao": 1,
+  "timestamp": "2026-09-15T23:29:16.545372",
+  "modelo": "Qwen/Qwen3-4B",
+  "tempo_resposta_segundos": 7.196,
+  "fontes": {
+    "fonte_a": "# Produto X\nO Produto X possui 8 GB de RAM.\n",
+    "fonte_b": "# Produto X\nO Produto X possui 16 GB de RAM.\n"
+  },
+  "resposta": {
+    "answer": "Não foi possível determinar a quantidade de RAM do Produto X devido a conflito nas fontes.",
+    "conflict": true,
+    "sources": [
+      "8 GB de RAM",
+      "16 GB de RAM"
+    ],
+    "needs_human_review": true
+  },
+  "esperado": {
+    "conflict": true,
+    "needs_human_review": true
+  }
+}
