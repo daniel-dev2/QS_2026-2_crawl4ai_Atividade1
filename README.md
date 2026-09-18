@@ -18,10 +18,11 @@ Commit/tag/release: [Release v0.9.3](https://github.com/unclecode/crawl4ai/relea
 |Rivaldo José Nascimento dos Santos|202200059974| Casos de teste documentados
 
 ## Entregas
-URL para vídeo no YouTube:
-Declaração de uso de IA: 
-Link para slides: 
-Link para relatório em PDF:
+URL para vídeo no YouTube: [https://youtu.be/HP_38B0kSXs]( https://youtu.be/HP_38B0kSXs)
+
+Link para slides: [https://github.com/daniel-dev2/QS_2026-2_crawl4ai_Atividade1/blob/main/qualidade%20de%20software.pdf](https://github.com/daniel-dev2/QS_2026-2_crawl4ai_Atividade1/blob/main/qualidade%20de%20software.pdf)
+
+Link para relatório em PDF: [https://github.com/daniel-dev2/QS_2026-2_crawl4ai_Atividade1/blob/main/QUALIDADE%20DE%20SOFTWARE%20(1).pdf](https://github.com/daniel-dev2/QS_2026-2_crawl4ai_Atividade1/blob/main/QUALIDADE%20DE%20SOFTWARE%20(1).pdf)
 
 
 
